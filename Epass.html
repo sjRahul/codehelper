@@ -279,6 +279,8 @@
 
 	    
   function setActive(el) {
+	  const el = document.getElementById(linkId); // Get the element by ID
+    if (!el) return;
     const links = document.querySelectorAll('nav a');
     links.forEach(link => link.style.borderBottom = '3px solid transparent');
     el.style.borderBottom = '3px solid #00f0ff';
