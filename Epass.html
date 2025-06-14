@@ -279,8 +279,6 @@
 
 	    
   function setActive(el) {
-	  const el = document.getElementById(linkId); // Get the element by ID
-    if (!el) return;
     const links = document.querySelectorAll('nav a');
     links.forEach(link => link.style.borderBottom = '3px solid transparent');
     el.style.borderBottom = '3px solid #00f0ff';
@@ -341,8 +339,8 @@
     <a href="https://sjrahul.github.io/codehelper/#comp-17209502703" onclick="setActive(this)" onmouseover="this.style.color='#00f0ff';" onmouseout="this.style.color='white';" style="color: white; text-decoration: none; padding: 10px 20px; text-align: right; border-bottom: 3px solid transparent; transition: color 0.3s, border-bottom 0.3s; display: block;">Experience</a>
     <a href="https://sjrahul.github.io/codehelper/#comp-197027d9565" onclick="setActive(this)" onmouseover="this.style.color='#00f0ff';" onmouseout="this.style.color='white';" style="color: white; text-decoration: none; padding: 10px 20px; text-align: right; border-bottom: 3px solid transparent; transition: color 0.3s, border-bottom 0.3s; display: block;">Portfolio</a>
     <a href="https://sjrahul.github.io/codehelper/#comp-17209551ee2" onclick="setActive(this)" onmouseover="this.style.color='#00f0ff';" onmouseout="this.style.color='white';" style="color: white; text-decoration: none; padding: 10px 20px; text-align: right; border-bottom: 3px solid transparent; transition: color 0.3s, border-bottom 0.3s; display: block;">Contact</a>
-    <a id="epass" href="https://sjrahul.github.io/codehelper/Epass.html" onclick="setActive(#epass)" onmouseover="this.style.color='#00f0ff';" onmouseout="this.style.color='white';" style="color: white; text-decoration: none; padding: 10px 20px; text-align: right; border-bottom: 3px solid transparent; transition: color 0.3s, border-bottom 0.3s; display: block;">E-pass</a>
-    <a id="fcraft" href="https://sjrahul.github.io/codehelper/Futurecraft.html" onclick="setActive(#fcraft)" onmouseover="this.style.color='#00f0ff';" onmouseout="this.style.color='white';" style="color: white; text-decoration: none; padding: 10px 20px; text-align: right; border-bottom: 3px solid transparent; transition: color 0.3s, border-bottom 0.3s; display: block;">FutureCraft</a>
+    <a href="https://sjrahul.github.io/codehelper/Epass.html" onclick="setActive(this)" onmouseover="this.style.color='#00f0ff';" onmouseout="this.style.color='white';" style="color: white; text-decoration: none; padding: 10px 20px; text-align: right; border-bottom: 3px solid rgb(0, 240, 255); transition: color 0.3s, border-bottom 0.3s; display: block;">E-pass</a>
+    <a href="https://sjrahul.github.io/codehelper/Futurecraft.html" onclick="setActive(this)" onmouseover="this.style.color='#00f0ff';" onmouseout="this.style.color='white';" style="color: white; text-decoration: none; padding: 10px 20px; text-align: right; border-bottom: 3px solid transparent; transition: color 0.3s, border-bottom 0.3s; display: block;">FutureCraft</a>
   </nav>
 </div><div class="sc-1akbv98-12 hApwOg"><div class="mobile-navbar-container sc-1akbv98-10 cUsEs"></div></div></div></div>
 
