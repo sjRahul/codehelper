@@ -205,44 +205,7 @@
     <link
 
     />
-	<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("contactForm");
-    if (!form) {
-      console.error("Form not found. Check the ID: contactForm");
-      return;
-    }
-
-    form.addEventListener("submit", async function (e) {
-      e.preventDefault();
-
-      const name = document.getElementById("name")?.value.trim();
-      const email = document.getElementById("email")?.value.trim();
-      const message = document.getElementById("message")?.value.trim();
-
-      if (!name || !email || !message) {
-        alert("Please fill in all fields.");
-        return;
-      }
-
-      const data = { name, email, message };
-
-      try {
-        const res = await fetch("/save", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(data),
-        });
-
-        const result = await res.text();
-        alert(result);
-      } catch (err) {
-        console.error("Error saving data:", err);
-        alert("Failed to save data.");
-      }
-    });
-  });
-</script>
+	
     <script src="./builtIcons-mb2e80ex.js" async></script>
     <script>
   function setActive(el) {
